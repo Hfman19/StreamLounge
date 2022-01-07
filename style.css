@@ -1,0 +1,109 @@
+div.sitename {
+    margin: 30px 0 0 80px;
+    font-family: Helvetica;
+    font-size: 35px;
+    z-index: 1;
+    color: beige;
+}
+
+.glow:hover {
+    color: beige;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2e0d1ea4, 0 0 25px #4d1bff, 0 0 35px #383738, 0 0 40px #5a5959, 0 0 55px #0098d4;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #3b3538, 0 0 40px #5375b3, 0 0 50px #345f8f, 0 0 60px #594dff, 0 0 70px #4441ff, 0 0 80px #463bda;
+    }
+  }
+  .menutext {
+    display: flexbox;
+    padding: 20px 0 0 80px;
+  }
+.footernav {
+    background-color: rgba(0, 0, 0, 0.795);
+    overflow: hidden;
+    position:absolute;
+    width: 99%;
+    height: 70px;
+    bottom: 70px;
+    font-family: Helvetica;
+    border-radius: 6px;
+  }
+  .footernav a {
+    color: beige;
+    padding: 30px 30px 40px 30px;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline;
+    font-weight: bold;
+  } 
+  .footernav a:hover {
+    color: beige;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2e0d1ea4, 0 0 25px #4d1bff, 0 0 35px #383738, 0 0 40px #5a5959, 0 0 55px #0098d4;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #3b3538, 0 0 40px #5375b3, 0 0 50px #345f8f, 0 0 60px #594dff, 0 0 70px #4441ff, 0 0 80px #463bda;
+    }
+  }
+  .footernav a.active {
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    color: white;
+    display:flexbox;
+  }
+  .footernav input[type=text] {
+    float: right;
+    padding: 5px 0 0 0;
+    border: none;
+    margin-right: 30px;
+    font-size: 20px;
+  }
+  .footernav input[type=text]:focus {
+    width: 20%;
+  }
+  @media screen and (max-width: 600px) {
+    .footernav a, .footernav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+}
+    .topnav input [type=text] {
+        border: 1px solid #ccc;
+      }
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+.container { 
+    position:relative;
+ }
+.container video {
+    position: relative;
+    z-index:0;
+}
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
