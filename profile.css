@@ -127,7 +127,16 @@ div.sitename {
   height: 15%;
   float: none;
   display: inline;
-  margin: 0 0 0 320px;
+  margin: 0 0 0 380px;
+}
+.modallabellogin {
+  margin: 0 0 0 50px;
+}
+.modallabelpassword {
+  margin: 0 0 0 105px;
+}
+.checkboxremember {
+margin: 0 0 0 10px;
 }
 .imgcontainer {
   display:flexbox;
@@ -138,36 +147,75 @@ div.sitename {
 }
 .modalinputlogin {
   font-family: Helvetica;
-  color: rgb(3, 3, 3);
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: beige;
+  background: transparent;
   margin: 0 0 0 10px;
   box-sizing: border-box;
   border-radius: 15px;
   width: 400px;
   height: 50px;
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-color: rgb(93, 93, 255);
 }
-.modalinputpassword {
+.modalinputlogin:hover {
   font-family: Helvetica;
-  color: rgb(3, 3, 3);
-  margin: 0 0 0 120px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: beige;
+  background: transparent;
+  margin: 0 0 0 10px;
   box-sizing: border-box;
   border-radius: 15px;
   width: 400px;
   height: 50px;
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-color: rgb(89, 161, 255);
+}
+.modalinputpassword {
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: beige;
+  background: transparent;
+  margin: 0 0 0 65px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 400px;
+  height: 50px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-color: rgb(93, 93, 255);
+}
+.modalinputpassword:hover {
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: beige;
+  background: transparent;
+  margin: 0 0 0 65px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 400px;
+  height: 50px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-color: rgb(89, 161, 255);
 }
 div.modalloginposition {
-  margin: 20px 0 0 10px;
+  margin: 20px 0 0 250px;
 }
 div.modalcancelposition {
-  margin: 20px 0 0 10px;
+  margin: 20px 0 0 405px;
 }
 .pswtextposition {
-  margin-right: 0px;
+  margin: 10px 0 5px 15px;
 }
 .modalcontainer {
   position: relative;
-  display: flexbox;
 }
 button.authorization {
     align-items: center;
@@ -197,7 +245,7 @@ button.authorization {
     touch-action: manipulation;
     white-space: nowrap;
     will-change: box-shadow,transform;
-    font-size: 18px;
+    font-size: 24px;
   }
   
   button.authorization:focus {
@@ -226,6 +274,7 @@ button.authorization {
   display: inline-flex;
   font-family: Helvetica;
   height: 48px;
+  width: 400px;
   justify-content: center;
   line-height: 1;
   list-style: none;

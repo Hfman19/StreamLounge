@@ -27,17 +27,14 @@ class="close" title="Close Modal">&times;</span>
     </div>
 <br>
     <div class="modalcontainer">
-      <label class="modallabel" for="uname"><b>Имя пользователя</b></label>
+      <label class="modallabellogin" for="uname"><b>Имя пользователя</b></label>
       <input class="modalinputlogin" type="text" placeholder="Enter Username" name="uname" required>
 <br>
-      <label class="modallabel" for="psw"><b>Пароль</b></label>
+      <label class="modallabelpassword" for="psw"><b>Пароль</b></label>
       <input class="modalinputpassword" type="password" placeholder="Enter Password" name="psw" required>
 <br>
     <div class="modalloginposition">
       <button class="modallogin" type="submit">Залогиниться</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="background-color: #3a3a3a;"> Запомнить меня
-      </label>
     </div>
     <div class="modalcancelposition">
       <button class="modalcancel" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
@@ -47,6 +44,9 @@ class="close" title="Close Modal">&times;</span>
     <div class="modalcontainer" style="background-color:#3a3a3a">
       <div class="pswtextposition">
       <span class="psw">Забыл <a href="/StreamLounge/userprofile.html">парольчик?</a></span>
+      <label>
+        <input class="checkboxremember" type="checkbox" checked="checked" name="remember" style="background-color: #3a3a3a;"> Запомнить меня
+      </label>
     </div> 
     </div>
   </form>

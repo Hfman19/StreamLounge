@@ -30,6 +30,7 @@ div.sitename {
     background-color: rgba(0, 0, 0, 0.795);
     overflow: hidden;
     position:absolute;
+    display: inline-flex;
     width: 99%;
     height: 70px;
     bottom: 70px;
@@ -106,4 +107,45 @@ div.sitename {
     top:0;
     left:0;
     z-index:1;
+}
+
+.audioplayer {
+  border-radius: 15px;
+  background: radial-gradient(100% 100% at 100% 0, #7f8cff 0, #4133ffb0 100%);
+  height: 50%;
+  width: 100%;
+  margin-left: 220px;
+  margin-top: 16px;
+  display: block;
+}
+
+button.playerbuttons {
+  border-radius: 20px;
+  background: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: none;
+  box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  font-family: Helvetica;
+  width: 20%;
+  margin: 8px 5px 0 15px;
+  font-weight: bold;
+  text-align: center;
+  color: beige;
+  box-sizing: border-box;
+}
+
+.playerbuttons:hover {
+  color: beige;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2e0d1ea4, 0 0 25px #4d1bff, 0 0 35px #383738, 0 0 40px #5a5959, 0 0 55px #0098d4;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #3b3538, 0 0 40px #5375b3, 0 0 50px #345f8f, 0 0 60px #594dff, 0 0 70px #4441ff, 0 0 80px #463bda;
+  }
 }
