@@ -23,7 +23,7 @@ div.overlay {
 div.sitename {
     margin: 30px 0 0 70px;
     font-family: Helvetica;
-    font-size: 20px;
+    font-size: 28px;
     z-index: 1;
     color: beige;
 }
@@ -71,10 +71,24 @@ div.sitename {
     text-shadow: 0 0 20px #fff, 0 0 30px #3b3538, 0 0 40px #5375b3, 0 0 50px #345f8f, 0 0 60px #594dff, 0 0 70px #4441ff, 0 0 80px #463bda;
   }
 }
+
 .footernav a.active {
   background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
   color: white;
   display:flexbox;
+  color: beige;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2e0d1ea4, 0 0 25px #4d1bff, 0 0 35px #383738, 0 0 40px #5a5959, 0 0 55px #0098d4;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #3b3538, 0 0 40px #5375b3, 0 0 50px #345f8f, 0 0 60px #594dff, 0 0 70px #4441ff, 0 0 80px #463bda;
+  }
 }
 .modal {
   display: none;
@@ -122,6 +136,51 @@ div.sitename {
   from {transform: scale(0)}
   to {transform: scale(1)}
 }
+button.forgetbutton {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Helvetica;
+  height: 36px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 16px;
+}
+
+button.forgetbutton:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+button.forgetbutton:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button.forgetbutton:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
 .avatar {
   width: 15%;
   height: 15%;
@@ -129,12 +188,15 @@ div.sitename {
   display: inline;
   margin: 0 0 0 380px;
 }
+
 .modallabellogin {
   margin: 0 0 0 50px;
 }
+
 .modallabelpassword {
   margin: 0 0 0 105px;
 }
+
 .checkboxremember {
 margin: 0 0 0 10px;
 }
@@ -142,9 +204,11 @@ margin: 0 0 0 10px;
   display:flexbox;
   margin: 20px 0 0 0;
 }
+
 .textusername {
   margin: 20px 0 0 0;
 }
+
 .modalinputlogin {
   font-family: Helvetica;
   font-size: 18px;
@@ -160,6 +224,7 @@ margin: 0 0 0 10px;
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   border-color: rgb(93, 93, 255);
 }
+
 .modalinputlogin:hover {
   font-family: Helvetica;
   font-size: 18px;
@@ -175,6 +240,7 @@ margin: 0 0 0 10px;
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   border-color: rgb(89, 161, 255);
 }
+
 .modalinputpassword {
   font-family: Helvetica;
   font-size: 18px;
@@ -190,6 +256,7 @@ margin: 0 0 0 10px;
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   border-color: rgb(93, 93, 255);
 }
+
 .modalinputpassword:hover {
   font-family: Helvetica;
   font-size: 18px;
@@ -229,13 +296,14 @@ button.authorization {
     cursor: pointer;
     display: inline-flex;
     font-family: Helvetica;
-    height: 48px;
+    height: 36px;
     justify-content: center;
     line-height: 1;
     list-style: none;
     overflow: hidden;
     padding-left: 16px;
     padding-right: 16px;
+    margin: 0 0 0 48px;
     position: relative;
     text-align: left;
     text-decoration: none;
@@ -245,7 +313,7 @@ button.authorization {
     touch-action: manipulation;
     white-space: nowrap;
     will-change: box-shadow,transform;
-    font-size: 24px;
+    font-size: 18px;
   }
   
   button.authorization:focus {
@@ -261,6 +329,7 @@ button.authorization {
     box-shadow: #3c4fe0 0 3px 7px inset;
     transform: translateY(2px);
   }
+
   button.modallogin {
   align-items: center;
   appearance: none;

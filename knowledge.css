@@ -1,12 +1,12 @@
 div.sitename {
     margin: 30px 0 0 80px;
     font-family: Helvetica;
-    font-size: 35px;
+    font-size: 28px;
     z-index: 1;
     color: beige;
 }
 
-.glow:hover {
+.glow h1 {
     color: beige;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -16,12 +16,13 @@ div.sitename {
   
   @keyframes glow {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2e0d1ea4, 0 0 25px #4d1bff, 0 0 35px #383738, 0 0 40px #5a5959, 0 0 55px #0098d4;
+      text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2e0d1ea4, 0 0 25px #4d1bff, 0 0 35px #ff6363, 0 0 40px #58e6ff, 0 0 55px #0098d4;
     }
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #3b3538, 0 0 40px #5375b3, 0 0 50px #345f8f, 0 0 60px #594dff, 0 0 70px #4441ff, 0 0 80px #463bda;
     }
   }
+
   .menutext {
     display: flexbox;
     padding: 20px 0 0 80px;
@@ -62,21 +63,9 @@ div.sitename {
   }
   .footernav a.active {
     background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    color: white;
     display:flexbox;
-    color: beige;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 2s ease-in-out infinite alternate;
-  animation: glow 2s ease-in-out infinite alternate;
-}
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2e0d1ea4, 0 0 25px #ffffff, 0 0 35px #ff00ff, 0 0 40px #ffdada, 0 0 55px #17bdff;
   }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #3b3538, 0 0 40px #5375b3, 0 0 50px #0e7eff, 0 0 60px #383838, 0 0 70px #4d4d4d, 0 0 80px #6a5fff;
-  }
-}
   .footernav input[type=text] {
     float: right;
     padding: 5px 0 0 0;
@@ -100,6 +89,7 @@ div.sitename {
     .topnav input [type=text] {
         border: 1px solid #ccc;
       }
+
 #myVideo {
     position: fixed;
     right: 0;
@@ -107,13 +97,16 @@ div.sitename {
     min-width: 100%;
     min-height: 100%;
   }
+
 .container { 
     position:relative;
  }
+
 .container video {
     position: relative;
     z-index:0;
 }
+
 .overlay {
     position:absolute;
     top:0;
