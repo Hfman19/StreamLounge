@@ -198,9 +198,10 @@ button.forgetbutton:active {
   font-size: 18px;
 }
 
-.checkboxremember {
+.checkbox {
 margin: 0 0 0 10px;
 }
+
 .imgcontainer {
   display:flexbox;
   margin: 20px 0 0 0;
